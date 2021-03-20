@@ -3,66 +3,69 @@ package main
 import (
 	"container/heap"
 	"fmt"
+	. "github.com/DimkaGorhover/leetcode-go/common"
 )
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
+type priorityQueue struct {
+	nodes []*ListNode
 }
 
-type LLHeap []*ListNode
-
-func (L *LLHeap) Len() int {
-	return len(*L)
+func (pq *priorityQueue) Len() int {
+	return len(pq.nodes)
 }
 
-func (L *LLHeap) Less(i, j int) bool {
-	return (*L)[i].Val < (*L)[j].Val
+func (pq *priorityQueue) Less(i, j int) bool {
+	return (pq.nodes)[i].Val < (pq.nodes)[j].Val
 }
 
-func (L *LLHeap) Push(x interface{}) {
-	*L = append(*L, x.(*ListNode))
+func (pq *priorityQueue) Push(x interface{}) {
+	node := x.(*ListNode)
+	pq.nodes = append(pq.nodes, node)
 }
 
-func (L *LLHeap) Pop() interface{} {
-	old := *L
-	l := len(old)
-	last := old[l-1]
-	*L = old[:l-1]
-	return last
+func (pq *priorityQueue) Pop() interface{} {
+	l := pq.Len()
+	if l == 0 {
+		return nil
+	}
+	el := pq.nodes[l-1]
+	pq.nodes = pq.nodes[:l-1]
+	return el
 }
 
-func (L LLHeap) Swap(i, j int) {
-	tmp := L[i]
-	L[i] = L[j]
-	L[j] = tmp
+func (pq priorityQueue) Swap(i, j int) {
+	tmp := pq.nodes[i]
+	pq.nodes[i] = pq.nodes[j]
+	pq.nodes[j] = tmp
 }
 
+func (pq *priorityQueue) String() string {
+	str := ""
+	prefix := ""
+	for _, node := range pq.nodes {
+		str = fmt.Sprintf("%s%s%v", str, prefix, node)
+		prefix = ", "
+	}
+	return "[" + str + "]"
+}
+
+// https://leetcode.com/problems/merge-k-sorted-lists/
 func mergeKLists(lists []*ListNode) *ListNode {
-
-	h := make(LLHeap, 0)
-	heap.Init(&h)
-
-	for i := 0; i < len(lists); i = i + 1 {
-		head := *(lists[i])
-		heap.Push(&h, &head)
+	h := &priorityQueue{}
+	for _, list := range lists {
+		if list != nil {
+			heap.Push(h, list)
+		}
 	}
-
-	for len(h) > 0 {
-		fmt.Printf(" --> %d\n", heap.Pop(&h))
+	tmp := &ListNode{}
+	head := tmp
+	for h.Len() > 0 {
+		node := heap.Pop(h).(*ListNode)
+		head.Next = node
+		head = node
+		if node.Next != nil {
+			heap.Push(h, node.Next)
+		}
 	}
-
-	return nil
-}
-
-func main() {
-
-	nodes := []*ListNode{
-		&(ListNode{Val: 4}),
-		&(ListNode{Val: 2}),
-		&(ListNode{Val: 1}),
-		&(ListNode{Val: 14}),
-	}
-
-	mergeKLists(nodes)
+	return tmp.Next
 }

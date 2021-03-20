@@ -1,4 +1,4 @@
-package p0021
+package common
 
 import (
 	"fmt"
@@ -37,7 +37,7 @@ func (node *ListNode) String() string {
 	sb := fmt.Sprintf("%d", node.Val)
 	next := node.Next
 	for next != nil {
-		sb = fmt.Sprintf("%s -> %d", sb, next.Val)
+		sb = fmt.Sprintf("%s, %d", sb, next.Val)
 		next = next.Next
 	}
 	return fmt.Sprintf("[%s]", sb)

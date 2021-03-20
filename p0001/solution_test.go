@@ -5,26 +5,24 @@ import (
 	"testing"
 )
 
-type testcase struct {
-	input    []int
-	target   int
-	expected []int
-}
-
-func TestAverage(t *testing.T) {
-
-	testsCases := []testcase{
-		{[]int{7, 11, 15, 2}, 9, []int{0, 3}},
+func Test_twoSum(t *testing.T) {
+	type args struct {
+		nums   []int
+		target int
 	}
-
-	for _, test := range testsCases {
-		actual := twoSum(test.input, test.target)
-		if !(reflect.DeepEqual(test.expected, actual)) {
-			t.Error(
-				"For", test.input,
-				"expected", test.expected,
-				"got", actual,
-			)
-		}
+	tests := []struct {
+		name string
+		args args
+		want []int
+	}{
+		{name: "", args: args{nums: []int{7, 11, 15, 2}, target: 9}, want: []int{0, 3}},
+		{name: "", args: args{nums: []int{7, 11, 15, 3}, target: 9}, want: []int{-1, -1}},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := twoSum(tt.args.nums, tt.args.target); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("twoSum() = %v, want %v", got, tt.want)
+			}
+		})
 	}
 }
