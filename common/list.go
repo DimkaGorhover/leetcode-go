@@ -42,3 +42,19 @@ func (node *ListNode) String() string {
 	}
 	return fmt.Sprintf("[%s]", sb)
 }
+
+func (node *ListNode) Equals(other *ListNode) bool {
+	if node == other {
+		return true
+	}
+	n1 := node
+	n2 := other
+	for n1 != nil && n2 != nil {
+		if n1.Val != n2.Val {
+			return false
+		}
+		n1 = n1.Next
+		n2 = n2.Next
+	}
+	return n1 == n2
+}

@@ -8,5 +8,5 @@ docker-test:
 		--memory-swap 0 \
 		-v $(shell pwd):/leetcode-go:ro \
 		-w /leetcode-go \
-		golang:1.16-alpine3.13 \
+		golang:1.18-alpine3.16 \
 		sh -c 'go version && go test ./...'
