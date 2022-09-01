@@ -15,7 +15,7 @@ type TreeNodeBuilder interface {
 
 func NewTreeNodeBuilder() TreeNodeBuilder {
 	return treeNodeBuilder{
-		entries: make([]treeNodeBuilderEntry, 0),
+		entries: []treeNodeBuilderEntry{},
 	}
 }
 
