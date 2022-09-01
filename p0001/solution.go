@@ -1,6 +1,5 @@
 package p0001
 
-// https://leetcode.com/problems/two-sum
 func twoSum(nums []int, target int) []int {
 	table := make(map[int]int)
 

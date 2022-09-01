@@ -1,7 +1,5 @@
 package p0003
 
-// LeetCode #3: Longest Substring Without Repeating Characters
-// https://leetcode.com/problems/longest-substring-without-repeating-characters/
 func lengthOfLongestSubstring(s string) int {
 	l := len(s)
 	if l <= 1 {

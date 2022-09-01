@@ -1,7 +1,5 @@
 package p0005
 
-// LeetCode #5: Longest Palindromic Substring
-// https://leetcode.com/problems/longest-palindromic-substring/
 func longestPalindrome(s string) string {
 	if len(s) <= 1 {
 		return s
