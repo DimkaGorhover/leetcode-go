@@ -33,7 +33,7 @@ func (pq *priorityQueue) Pop() interface{} {
 	return el
 }
 
-func (pq priorityQueue) Swap(i, j int) {
+func (pq *priorityQueue) Swap(i, j int) {
 	tmp := pq.nodes[i]
 	pq.nodes[i] = pq.nodes[j]
 	pq.nodes[j] = tmp
