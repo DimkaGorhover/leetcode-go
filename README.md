@@ -9,6 +9,7 @@
 - [LeetCode #5: Longest Palindromic Substring](/p0005)
 - [LeetCode #20: Valid Parentheses](/p0020)
 - [LeetCode #42: Trapping Rain Water](/p0042)
+- [LeetCode #205: Isomorphic Strings](/p0205)
 - [LeetCode #502: IPO](/p0502)
 - [LeetCode 1572: Matrix Diagonal Sum](/p1572)
 - [LeetCode #2133: Check if Every Row and Column Contains All Numbers](/p2133)
