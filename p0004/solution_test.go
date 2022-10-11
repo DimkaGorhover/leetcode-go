@@ -3,6 +3,7 @@ package p0004
 import "testing"
 
 func Test_findMedianSortedArrays(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		nums1 []int
 		nums2 []int

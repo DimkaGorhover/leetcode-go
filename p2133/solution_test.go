@@ -3,6 +3,7 @@ package p2133
 import "testing"
 
 func Test_checkValid(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		matrix [][]int
 	}

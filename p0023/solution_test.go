@@ -7,6 +7,7 @@ import (
 )
 
 func Test_mergeKLists(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		lists []*ListNode
 	}
@@ -17,21 +18,25 @@ func Test_mergeKLists(t *testing.T) {
 	}{
 		{
 			name: "",
-			args: args{lists: []*ListNode{
-				ListNodeOf(1, 2, 3, 9),
-				ListNodeOf(1, 2, 3, 8),
-				ListNodeOf(1, 2, 3, 4),
-				ListNodeOf(1, 2, 3, 7),
-				ListNodeOf(1, 2, 3, 5),
-			}},
+			args: args{
+				lists: []*ListNode{
+					ListNodeOf(1, 2, 3, 9),
+					ListNodeOf(1, 2, 3, 8),
+					ListNodeOf(1, 2, 3, 4),
+					ListNodeOf(1, 2, 3, 7),
+					ListNodeOf(1, 2, 3, 5),
+				},
+			},
 			want: ListNodeOf(1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 5, 7, 8, 9),
 		},
 		{
 			name: "",
-			args: args{lists: []*ListNode{
-				ListNodeOf(),
-				ListNodeOf(),
-			}},
+			args: args{
+				lists: []*ListNode{
+					ListNodeOf(),
+					ListNodeOf(),
+				},
+			},
 			want: ListNodeOf(),
 		},
 		{

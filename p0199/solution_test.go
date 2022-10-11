@@ -7,6 +7,7 @@ import (
 )
 
 func Test_rightSideView(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		root *TreeNode
 	}

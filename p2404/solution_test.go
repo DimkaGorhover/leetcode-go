@@ -3,6 +3,7 @@ package p2404
 import "testing"
 
 func Test_mostFrequentEven(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		nums []int
 	}

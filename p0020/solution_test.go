@@ -3,6 +3,7 @@ package p0021
 import "testing"
 
 func Test_isValid(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		s string
 	}

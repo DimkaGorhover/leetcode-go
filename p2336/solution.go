@@ -18,23 +18,23 @@ func Constructor() SmallestInfiniteSet {
 	}
 }
 
-func (s *SmallestInfiniteSet) PopSmallest() int {
-	if s.heap.Len() > 0 {
-		num := heap.Pop(s.heap).(int)
-		s.set[num] = false
+func (set *SmallestInfiniteSet) PopSmallest() int {
+	if set.heap.Len() > 0 {
+		num := heap.Pop(set.heap).(int)
+		set.set[num] = false
 		return num
 	}
-	next := s.next
-	s.next++
+	next := set.next
+	set.next++
 	return next
 }
 
-func (s *SmallestInfiniteSet) AddBack(num int) {
-	if s.set[num] || num >= s.next {
+func (set *SmallestInfiniteSet) AddBack(num int) {
+	if set.set[num] || num >= set.next {
 		return
 	}
-	s.set[num] = true
-	heap.Push(s.heap, num)
+	set.set[num] = true
+	heap.Push(set.heap, num)
 }
 
 // ============================================================================

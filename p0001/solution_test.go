@@ -6,6 +6,7 @@ import (
 )
 
 func Test_twoSum(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		nums   []int
 		target int

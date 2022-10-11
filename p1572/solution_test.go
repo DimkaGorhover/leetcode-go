@@ -3,6 +3,7 @@ package p1572
 import "testing"
 
 func Test_diagonalSum(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		mat [][]int
 	}

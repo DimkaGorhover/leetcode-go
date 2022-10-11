@@ -3,6 +3,7 @@ package p0005
 import "testing"
 
 func Test_longestPalindrome(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		s string
 	}

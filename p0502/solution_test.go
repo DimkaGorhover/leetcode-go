@@ -3,6 +3,7 @@ package p0502
 import "testing"
 
 func Test_findMaximizedCapital(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		k       int
 		w       int

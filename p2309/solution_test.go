@@ -3,6 +3,7 @@ package p2309
 import "testing"
 
 func Test_greatestLetter(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		s string
 	}

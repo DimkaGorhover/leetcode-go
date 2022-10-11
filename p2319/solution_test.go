@@ -3,6 +3,7 @@ package p2319
 import "testing"
 
 func Test_checkXMatrix(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		grid [][]int
 	}

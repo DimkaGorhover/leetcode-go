@@ -12,6 +12,7 @@ func assert(t *testing.T, actual, expected int) {
 }
 
 func TestConstructor_001(t *testing.T) {
+	t.Parallel()
 	set := Constructor()
 	assert(t, set.PopSmallest(), 1)
 	set.AddBack(1)
@@ -25,6 +26,7 @@ func TestConstructor_001(t *testing.T) {
 }
 
 func TestConstructor_002(t *testing.T) {
+	t.Parallel()
 	set := Constructor()
 	assert(t, set.PopSmallest(), 1)
 	assert(t, set.PopSmallest(), 2)

@@ -1,12 +1,20 @@
-test:
-	@go version && go test ./...
+SHELL := /usr/bin/env /bin/bash -e -u -o pipefail -o errexit -o nounset
 
+.SILENT:
+test:
+	go version && go test ./...
+
+.SILENT:
 docker-test:
-	@docker run --rm -i -t \
+	docker run --rm -i -t \
 		--memory 128m \
 		--memory-reservation 128m \
 		--memory-swap 0 \
+		-u $(shell id -u):$(shell id -g) \
 		-v $(shell pwd):/leetcode-go:ro \
+		-v /Volumes/RAMDisk/go_cache:/go_cache \
+		-e HOME=/dev/shm \
+		-e GOCACHE=/go_cache \
 		-w /leetcode-go \
-		golang:1.18-alpine3.16 \
+		golang:1.19-alpine \
 		sh -c 'go version && go test ./...'

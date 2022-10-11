@@ -3,6 +3,7 @@ package p0003
 import "testing"
 
 func Test_lengthOfLongestSubstring(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		s string
 	}

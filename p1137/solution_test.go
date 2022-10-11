@@ -3,6 +3,7 @@ package p1137
 import "testing"
 
 func Test_tribonacci(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		n int
 	}

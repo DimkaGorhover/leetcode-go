@@ -3,6 +3,7 @@ package p2283
 import "testing"
 
 func Test_digitCount(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		num string
 	}

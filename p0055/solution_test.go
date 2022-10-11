@@ -10,6 +10,7 @@ import (
 )
 
 func Test_canJump(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		nums []int
 	}

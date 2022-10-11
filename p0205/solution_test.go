@@ -3,6 +3,7 @@ package p0205
 import "testing"
 
 func Test_isIsomorphic(t *testing.T) {
+	t.Parallel()
 	type args struct {
 		s string
 		t string
