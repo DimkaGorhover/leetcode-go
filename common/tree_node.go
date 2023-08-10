@@ -6,6 +6,16 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+func (n *TreeNode) Equals(other *TreeNode) bool {
+	if n == other {
+		return true
+	}
+	if other == nil {
+		return false
+	}
+	return n.Val == other.Val && n.Left.Equals(other.Left) && n.Right.Equals(other.Right)
+}
+
 type TreeNodeBuilder interface {
 	Add(value int) TreeNodeBuilder
 	AddAll(values ...int) TreeNodeBuilder

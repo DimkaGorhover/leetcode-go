@@ -2,6 +2,7 @@ package p0055
 
 import (
 	"bufio"
+	"github.com/stretchr/testify/assert"
 	"io"
 	"os"
 	"strconv"
@@ -11,6 +12,7 @@ import (
 
 func Test_canJump(t *testing.T) {
 	t.Parallel()
+
 	type args struct {
 		nums []int
 	}
@@ -20,16 +22,16 @@ func Test_canJump(t *testing.T) {
 		args args
 		want bool
 	}{
-		{name: "", args: args{nums: []int{0}}, want: true},
-		{name: "", args: args{nums: []int{0, 2, 3}}, want: false},
-		{name: "", args: args{nums: []int{3, 2, 1, 0, 4}}, want: false},
-		{name: "", args: args{nums: []int{2, 3, 1, 1, 4}}, want: true},
-		{name: "", args: args{nums: numbers}, want: expected},
+		{name: "test_001", args: args{nums: []int{0}}, want: true},
+		{name: "test_002", args: args{nums: []int{0, 2, 3}}, want: false},
+		{name: "test_003", args: args{nums: []int{3, 2, 1, 0, 4}}, want: false},
+		{name: "test_004", args: args{nums: []int{2, 3, 1, 1, 4}}, want: true},
+		{name: "test_005", args: args{nums: numbers}, want: expected},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := canJump(tt.args.nums); got != tt.want {
-				t.Errorf("canJump() = %v, want %v", got, tt.want)
+				assert.Equal(t, tt.want, got)
 			}
 		})
 	}

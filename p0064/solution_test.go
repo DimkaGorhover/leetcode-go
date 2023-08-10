@@ -1,6 +1,9 @@
 package p0064
 
-import "testing"
+import (
+	"github.com/stretchr/testify/assert"
+	"testing"
+)
 
 func Test_minPathSum(t *testing.T) {
 	t.Parallel()
@@ -64,7 +67,7 @@ func Test_minPathSum(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := minPathSum(tt.args.grid); got != tt.want {
-				t.Errorf("minPathSum() = %v, want %v", got, tt.want)
+				assert.Equal(t, tt.want, got)
 			}
 		})
 	}
