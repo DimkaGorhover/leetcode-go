@@ -8,6 +8,7 @@
 - [LeetCode #4: Median of Two Sorted Arrays](/p0004)
 - [LeetCode #5: Longest Palindromic Substring](/p0005)
 - [LeetCode #20: Valid Parentheses](/p0020)
+- [LeetCode #22: Generate Parentheses](/p0022)
 - [LeetCode #42: Trapping Rain Water](/p0042)
 - [LeetCode #205: Isomorphic Strings](/p0205)
 - [LeetCode #502: IPO](/p0502)
