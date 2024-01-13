@@ -16,13 +16,13 @@ func trap(height []int) int {
 			lower = right
 			rightIndex--
 		}
-		level = max(level, lower)
+		level = maxInt(level, lower)
 		water += level - lower
 	}
 	return water
 }
 
-func max(a, b int) int {
+func maxInt(a, b int) int {
 	if a > b {
 		return a
 	}

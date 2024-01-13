@@ -2,7 +2,6 @@ package p0021
 
 import . "github.com/DimkaGorhover/leetcode-go/common"
 
-// https://leetcode.com/problems/merge-two-sorted-lists
 func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	if l1 == nil {
 		return l2
