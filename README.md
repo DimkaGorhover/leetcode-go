@@ -13,6 +13,7 @@
 - [LeetCode #20: Valid Parentheses](/p0020)
 - [LeetCode #21: Merge Two Sorted Lists](/p0021)
 - [LeetCode #22: Generate Parentheses](/p0022)
+- [LeetCode #36: Valid Sudoku](/p0036)
 - [LeetCode #42: Trapping Rain Water](/p0042)
 - [LeetCode #71: Simplify Path](/p0071)
 - [LeetCode #205: Isomorphic Strings](/p0205)
