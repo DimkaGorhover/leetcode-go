@@ -26,6 +26,7 @@
 - [LeetCode #1122: Relative Sort Array](/p1122)
 - [LeetCode #1146: Snapshot Array](/p1146)
 - [LeetCode #1572: Matrix Diagonal Sum](/p1572)
+- [LeetCode #1603. Design Parking System](/p1603)
 - [LeetCode #2133: Check if Every Row and Column Contains All Numbers](/p2133)
 - [LeetCode #2283: Check if Number Has Equal Digit Count and Digit Value](/p2283)
 - [LeetCode #2309: Greatest English Letter in Upper and Lower Case](/p2309)
