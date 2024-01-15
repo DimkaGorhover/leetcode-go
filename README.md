@@ -1,5 +1,9 @@
 # leetcode-go
 
+## Other Languages
+
+- [leetcode-java](https://github.com/DimkaGorhover/leetcode-java)
+
 ## Solutions
 
 - [LeetCode #1 Two Sum](/p0001)
@@ -18,6 +22,7 @@
 - [LeetCode #37. Sudoku Solver](/p0037)
 - [LeetCode #42: Trapping Rain Water](/p0042)
 - [LeetCode #71: Simplify Path](/p0071)
+- [LeetCode #128: Longest Consecutive Sequence](/p0128)
 - [LeetCode #205: Isomorphic Strings](/p0205)
 - [LeetCode #284: Peeking Iterator](/p0284)
 - [LeetCode #303: Range Sum Query - Immutable](/p0303)
