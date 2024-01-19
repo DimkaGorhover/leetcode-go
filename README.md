@@ -28,6 +28,7 @@
 - [LeetCode #303: Range Sum Query - Immutable](/p0303)
 - [LeetCode #304: Range Sum Query 2D - Immutable](/p0304)
 - [LeetCode #344: Reverse String](/p0344)
+- [LeetCode #345: Reverse Vowels of a String](/p0345)
 - [LeetCode #502: IPO](/p0502)
 - [LeetCode #1122: Relative Sort Array](/p1122)
 - [LeetCode #1146: Snapshot Array](/p1146)
