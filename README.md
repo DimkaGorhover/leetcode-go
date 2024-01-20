@@ -22,6 +22,7 @@
 - [LeetCode #37. Sudoku Solver](/p0037)
 - [LeetCode #42: Trapping Rain Water](/p0042)
 - [LeetCode #71: Simplify Path](/p0071)
+- [LeetCode #101: Symmetric Tree](/p0101)
 - [LeetCode #128: Longest Consecutive Sequence](/p0128)
 - [LeetCode #205: Isomorphic Strings](/p0205)
 - [LeetCode #284: Peeking Iterator](/p0284)
