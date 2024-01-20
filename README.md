@@ -33,6 +33,7 @@
 - [LeetCode #344: Reverse String](/p0344)
 - [LeetCode #345: Reverse Vowels of a String](/p0345)
 - [LeetCode #502: IPO](/p0502)
+- [LeetCode #958: Check Completeness of a Binary Tree](/p0958)
 - [LeetCode #1122: Relative Sort Array](/p1122)
 - [LeetCode #1146: Snapshot Array](/p1146)
 - [LeetCode #1572: Matrix Diagonal Sum](/p1572)
