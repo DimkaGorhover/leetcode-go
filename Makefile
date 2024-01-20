@@ -2,6 +2,7 @@ SHELL := /usr/bin/env /bin/bash -e -u -o pipefail -o errexit -o nounset
 
 .SILENT:
 test:
+	GOCACHE=/Volumes/RAMDisk/go_cache:/go_cache \
 	go version && go test ./...
 
 .SILENT:
@@ -17,4 +18,4 @@ docker-test:
 		-e GOCACHE=/go_cache \
 		-w /leetcode-go \
 		golang:1.19-alpine \
-		sh -c 'go version && go test ./...'
+		sh -c 'go version && go test -parallel -race ./...'
