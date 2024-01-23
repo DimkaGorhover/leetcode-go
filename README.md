@@ -24,6 +24,7 @@
 - [LeetCode #37. Sudoku Solver](/pkg/lc0037)
 - [LeetCode #42: Trapping Rain Water](/pkg/lc0042)
 - [LeetCode #71: Simplify Path](/pkg/lc0071)
+- [LeetCode #98: Validate Binary Search Tree](/pkg/lc0098)
 - [LeetCode #101: Symmetric Tree](/pkg/lc0101)
 - [LeetCode #128: Longest Consecutive Sequence](/pkg/lc0128)
 - [LeetCode #205: Isomorphic Strings](/pkg/lc0205)
