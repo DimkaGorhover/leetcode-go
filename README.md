@@ -23,6 +23,7 @@
 - [LeetCode #36: Valid Sudoku](/pkg/lc0036)
 - [LeetCode #37. Sudoku Solver](/pkg/lc0037)
 - [LeetCode #42: Trapping Rain Water](/pkg/lc0042)
+- [LeetCode #46: Permutations](/pkg/lc0046)
 - [LeetCode #71: Simplify Path](/pkg/lc0071)
 - [LeetCode #98: Validate Binary Search Tree](/pkg/lc0098)
 - [LeetCode #101: Symmetric Tree](/pkg/lc0101)
