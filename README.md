@@ -29,6 +29,7 @@
 - [LeetCode #101: Symmetric Tree](/pkg/lc0101)
 - [LeetCode #128: Longest Consecutive Sequence](/pkg/lc0128)
 - [LeetCode #205: Isomorphic Strings](/pkg/lc0205)
+- [LeetCode #208: Implement Trie (Prefix Tree)](/pkg/lc0208)
 - [LeetCode #284: Peeking Iterator](/pkg/lc0284)
 - [LeetCode #303: Range Sum Query - Immutable](/pkg/lc0303)
 - [LeetCode #304: Range Sum Query 2D - Immutable](/pkg/lc0304)
