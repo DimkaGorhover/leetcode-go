@@ -31,6 +31,7 @@
 - [LeetCode #205: Isomorphic Strings](/pkg/lc0205)
 - [LeetCode #208: Implement Trie (Prefix Tree)](/pkg/lc0208)
 - [LeetCode #284: Peeking Iterator](/pkg/lc0284)
+- [LeetCode #287: Find the Duplicate Number](/pkg/lc0287)
 - [LeetCode #303: Range Sum Query - Immutable](/pkg/lc0303)
 - [LeetCode #304: Range Sum Query 2D - Immutable](/pkg/lc0304)
 - [LeetCode #344: Reverse String](/pkg/lc0344)
