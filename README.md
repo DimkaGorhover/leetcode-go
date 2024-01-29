@@ -46,6 +46,7 @@
 - [LeetCode #1146: Snapshot Array](/pkg/lc1146)
 - [LeetCode #1572: Matrix Diagonal Sum](/pkg/lc1572)
 - [LeetCode #1603. Design Parking System](/pkg/lc1603)
+- [LeetCode #2108: Find First Palindromic String in the Array](/pkg/lc2108)
 - [LeetCode #2133: Check if Every Row and Column Contains All Numbers](/pkg/lc2133)
 - [LeetCode #2283: Check if Number Has Equal Digit Count and Digit Value](/pkg/lc2283)
 - [LeetCode #2309: Greatest English Letter in Upper and Lower Case](/pkg/lc2309)
