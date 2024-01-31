@@ -54,3 +54,4 @@
 - [LeetCode #2319: Check if Matrix Is X-Matrix](/pkg/lc2319)
 - [LeetCode #2336: Smallest Number in Infinite Set](/pkg/lc2336)
 - [LeetCode #2404: Most Frequent Even Element](/pkg/lc2404)
+- [LeetCode #3005: Count Elements With Maximum Frequency](/pkg/lc3005)
