@@ -28,6 +28,7 @@
 - [LeetCode #98: Validate Binary Search Tree](/pkg/lc0098)
 - [LeetCode #101: Symmetric Tree](/pkg/lc0101)
 - [LeetCode #128: Longest Consecutive Sequence](/pkg/lc0128)
+- [LeetCode #150: Evaluate Reverse Polish Notation](/pkg/lc0150)
 - [LeetCode #205: Isomorphic Strings](/pkg/lc0205)
 - [LeetCode #208: Implement Trie (Prefix Tree)](/pkg/lc0208)
 - [LeetCode #232: Implement Queue using Stacks](/pkg/lc0232)
